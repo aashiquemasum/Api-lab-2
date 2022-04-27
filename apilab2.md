@@ -175,6 +175,7 @@ Ans. No list in the response body. No available property was there.
 6. Create a new user in a system using URI: https://reqres.in/api/users. name: yourname, job: dreamjob
 What is the response code: What are the available property(key) names in the response body? What is the value of response Header Etag?
 Ans. The response code is 201 Created.
+<img width="960" alt="6b" src="https://user-images.githubusercontent.com/102998720/165596449-4e6fbf9c-1226-40ff-a482-1d690a8d325b.png">
 
 The primary object have followings property(key):
 
@@ -449,5 +450,19 @@ Status Code: 404
 Property(Key) name: "detail"
 <img width="960" alt="30" src="https://user-images.githubusercontent.com/102998720/165453959-bee17ba2-78ad-41ad-860c-0bac5f218b81.png">
 
+31. Let's try something interesting. Can we remember bash script? Choose any 5 GET API. Use one bash script to make call and save the response in 5 different json file. If you can't achieve it that's fine. This is for fun.Example curl www.google.com >> response1.json
+Ans: I have written the bash script named "getapi.sh":
 
+#!/bin/bash
+curl -o users.json https://reqres.in/api/users/3
+curl -o planets.json https://swapi.dev/api/planets/3/
+curl -o emplyee.json http://dummy.restapiexample.com/api/v1/employee/3
+curl -o ping.json https://restful-booker.herokuapp.com/ping
+curl -o vehicles.json https://swapi.dev/api/vehicles/schema/
+Then I ran the bash script by following command
 
+$ sh getapi.sh
+
+And I found all the .json output in the directory. Those files are available with this directory.
+
+<img width="494" alt="31" src="https://user-images.githubusercontent.com/102998720/165598545-b645efa4-8bcf-4652-b20f-92bafbd20822.png">
