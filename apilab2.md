@@ -412,3 +412,42 @@ How many employees are now in the employees list? http://dummy.restapiexample.co
 Can you see the deleted employee record?
 Ans. The response is as follows:
 <img width="960" alt="24a" src="https://user-images.githubusercontent.com/102998720/165451625-9742b7be-87f1-470c-8b60-1c6c6f5271a7.png">
+
+25. What is the response? What are the available property(Key) names in the response body?
+Ans. The response is as follows:
+<img width="960" alt="25" src="https://user-images.githubusercontent.com/102998720/165452662-18a2938e-78ac-4bc3-864c-8b2bb56db091.png">
+The available property(key) is "error"
+
+26. Get a user Using URL https://reqres.in/api/unknown/2. What is the response?
+Ans: The response is as follows:
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/102998720/165452964-f6d44d5e-e8de-4d89-99ef-64566f988985.png">
+27. A simple health check endpoint to confirm whether the API is up and running using https://restful-booker.herokuapp.com/ping
+What is the response?
+Ans: The response is as follows:
+<img width="960" alt="27" src="https://user-images.githubusercontent.com/102998720/165453170-06b1a9a9-fc29-4339-8dd8-134b42dca8c6.png">
+
+28. Get information using Delayed Response using URI: https://reqres.in/api/users?delay=3
+What is the response? How many seconds delay to respond?
+Ans: The response is as follows:
+<img width="960" alt="29" src="https://user-images.githubusercontent.com/102998720/165453425-4696a544-835e-49ac-91d7-c3e609152830.png">
+3:00 seconds delay to respond.
+
+29. Get information about vehicles using URL https://swapi.dev/api/vehicles/schema/
+What type of response it is? What is response status code?
+Ans: Type of response: Data Not Found
+
+Status Code: 404
+<img width="960" alt="29b" src="https://user-images.githubusercontent.com/102998720/165453742-d1b3d0c9-390c-4e1b-9382-c38ab26dc1c7.png">
+
+30. Get information about starships using URL https://swapi.dev/api/starships/schema/
+What type of response it is? Write down the response status code.
+What are the available property(Key) names in the response body?
+Ans. Type of response: Data Not Found
+
+Status Code: 404
+
+Property(Key) name: "detail"
+<img width="960" alt="30" src="https://user-images.githubusercontent.com/102998720/165453959-bee17ba2-78ad-41ad-860c-0bac5f218b81.png">
+
+
+
