@@ -196,5 +196,219 @@ Ans. The response code is 400 Bad Request.
 }
 What is the value of response Header Etag? What is the response?
 Ans. The value of response header Etag is W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+<img width="960" alt="8a" src="https://user-images.githubusercontent.com/102998720/165446019-3aee5495-e4cf-464a-b4d5-2df22c97fa20.png">
+<img width="960" alt="8b" src="https://user-images.githubusercontent.com/102998720/165446042-be861061-174d-466e-8d7b-c10590b61c67.png">
 
-<img width="960" alt="8b" src="https://user-images.githubusercontent.com/102998720/165445848-9046f55d-5959-4d13-95bc-3240b54a3e7b.png">
+9. Get information about all planets using URI: https://swapi.dev/api/planets.
+Carefully observe the response body and make a list of all attributes and write their data types.
+How many lists can you see in the response body?
+Ans. There is one list I can see in the response body. Every object under that array has two lists.
+<img width="960" alt="9" src="https://user-images.githubusercontent.com/102998720/165446497-e6f42419-b99e-4816-9959-4c6b0701ab66.png">
+The data type of the Attributes are given below:
+
+count: number
+next: string
+previous: null
+results: array
+name: string
+rotation_period: string
+orbital_period: string
+diameter: string
+climate: string
+gravity: string
+terrain: string
+surface_water: string
+population: string
+residents: array
+films: array
+created: string
+edited: string
+url: string
+
+10. Get information about the third planet using URI: https://swapi.dev/api/planets/3/
+How many properties you can see in response body?
+Ans. 14 properties can be seen here.
+<img width="960" alt="10" src="https://user-images.githubusercontent.com/102998720/165447243-d1797f69-67d5-485d-b775-1b0c0b4869f0.png">
+
+11. Get information about all the starships using URI: https://swapi.dev/api/starships.
+Carefully observe the response body and make a list of all attributes and write their data types. How many lists can you see in the response body?
+Ans. There is one list I can see in the response body. However, every object under that array has two lists.
+<img width="960" alt="11" src="https://user-images.githubusercontent.com/102998720/165447590-0233a312-4b2f-46f4-9c28-2bc63335a168.png">
+
+The data type of the Attributes are given below:
+
+count: number
+next: string
+previous: null
+results: array
+name: string
+model: string
+manufacturer: string
+cost_in_credits: string
+length: string
+max_atmosphering_speed: string
+crew: string
+passengers: string
+cargo-capacity: string
+consumables: string
+hyperdrive_rating: string
+MGLT: string
+starship_class: string
+pilots: array
+films: array
+created: string
+edited: string
+url: string
+
+12. Get information about the ninth starship using URI: https://swapi.dev/api/starships/9/
+How many lists can you see in the response body?
+Ans. I can see two lists.
+<img width="960" alt="12" src="https://user-images.githubusercontent.com/102998720/165448037-ea7c52cd-d56c-4272-ad87-7e66767c06a5.png">
+
+13. Get information about all films using URI: https://swapi.dev/api/films. Carefully observe the response body and make a list of all attributes and write their data types.
+How many lists can you see in the response body?
+Ans. There is one list I can see in the response body. However, every object under that array has five lists.
+<img width="960" alt="13" src="https://user-images.githubusercontent.com/102998720/165448261-5bc0eaf2-f7e5-48fe-8ae0-d5ae68d28bd1.png">
+
+14. Get information about the species using URI: https://swapi.dev/api/species
+How many lists can you see in the response body?
+Ans. I can see one list in the response body.
+
+15. Get all booking ids using URI: https://restful-booker.herokuapp.com/booking
+How many lists can you see in the response body?
+Ans. I can see one list in the response body.
+
+16. Get details about booking id 23 using URI: https://restful-booker.herokuapp.com/booking/23
+What is the response?
+Ans. The response is 200 OK - Standard Response for successful HTTP requests. The response is as follows:
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/102998720/165448727-3b5b472e-5815-4219-8f04-7510f2148c32.png">
+
+17. Get details about booking id 23 using URI: https://restful-booker.herokuapp.com/booking/3
+What is the response?
+Ans. The response is 200 OK - Standard Response for successful HTTP requests. The response is as follows:
+
+<img width="960" alt="17" src="https://user-images.githubusercontent.com/102998720/165449095-9ef068b3-0651-4357-ad69-845c9b1369a4.png">
+
+18. Get information about all planets using URI: https://jsonplaceholder.typicode.com/users
+What is the response? How many lists can you see in the response body?
+Ans. The response is 200 OK - Standard Response for successful HTTP requests. The response is as follows:
+<img width="960" alt="18" src="https://user-images.githubusercontent.com/102998720/165449372-761967d5-03e7-4dbb-b86b-e60c3ad6afc9.png">
+
+19. Get information about all species using URI: https://swapi.dev/api/species. Carefully observe the response body and make a list of all attributes and write their data types.
+How many lists can you see in the response body? What is the response?
+Ans. There is one list I can see in the response body. However, every object under that array has two lists.
+<img width="960" alt="19" src="https://user-images.githubusercontent.com/102998720/165449680-c9ea1f32-382a-4ba3-b6b9-66e8f9881830.png">
+The data type of the Attributes are given below:
+
+count: number
+next: string
+previous: null
+results: array
+name: String
+classification: String
+designation: String
+average_height: String
+skin_colors: String
+hair_colors: String
+eye_colors: String
+average_lifespan: String
+homeworld: String
+language: String
+people: array
+films: array
+created: String
+edited: String
+url: String
+The response is 200 OK - Standard Response for successful HTTP requests.
+
+20. Write JSON path:
+a. To retrieve all direct properties of the studio object:
+
+.studio.movie
+.studio.music
+b. To find out the music’s song:
+
+.studio.music.song
+c. To find the rating of all items in the studio:
+
+.studio.movie[0].rating
+.studio.movie[1].rating
+.studio.movie[2].rating
+.studio.movie[3].rating
+d. To retrieve information on all movies
+
+.studio.movie[0]
+.studio.movie[1]
+.studio.movie[2]
+.studio.movie[3]
+e. To find out the titles of all movies
+
+.studio.movie[0].title
+.studio.movie[1].title
+.studio.movie[2].title
+.studio.movie[3].title
+f. To retrieve the titles of all movies by Jack:
+
+.studio.movie[2].director
+g. To retrieve the category of the last movie:
+
+.studio.movie[3].category
+i. To retrieve all movies that have the isbn property
+
+.studio.movie[2].isbn
+.studio.movie[3].isbn
+21. Get information about all employees using URI: http://dummy.restapiexample.com/api/v1/employees
+How many lists can you see in the response body?
+What is the response?
+What are the available property(Key) names in the response body?
+Make a list of all attributes and write the data types.
+Ans. The response body has one list.
+
+The response is 200 OK - Standard Response for successful HTTP requests.
+
+The primary object have following property(key):
+
+status
+data
+message
+Within the array of data we have following property(key):
+
+id
+employee_name
+employee_salary
+employee_age
+profile_image
+Followings are the data type of all attributes:
+
+status: string
+data: array
+message: string
+id: number
+employee_name: string
+employee_salary: number
+employee_age: number
+profile_image: string
+<img width="960" alt="21" src="https://user-images.githubusercontent.com/102998720/165450358-424d3637-e058-47f8-84f0-c2ed2fdf41d2.png">
+22. Get a single employee data using URI: http://dummy.restapiexample.com/api/v1/employee/3
+How many data you can see in response body? What is the response status?
+Ans. I can see one data.
+
+The response status is 200 OK
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/102998720/165450557-28bd44c2-e314-4452-b003-a8cca0545e55.png">
+23.Create a new employee in a system by using URI: http://dummy.restapiexample.com/api/v1/create Verb: POST Request Body:
+{
+"name":"your name",
+"salary":"123",
+"age":"23"
+}
+What is the response? can you see "id" property in the response? if Yes, note the "id" value.
+Ans. Standard response for successful HTTP request. Response is as follows:
+<img width="960" alt="23" src="https://user-images.githubusercontent.com/102998720/165451164-37853e4a-e2da-42d5-af0a-72a529dcc5f7.png">
+The id value is 7680.
+
+24. Delete an employee record whose employee id in 2 by using URI http://dummy.restapiexample.com/api/v1/delete/2
+What is the response?
+How many employees are now in the employees list? http://dummy.restapiexample.com/api/v1/employees
+Can you see the deleted employee record?
+Ans. The response is as follows:
+<img width="960" alt="24a" src="https://user-images.githubusercontent.com/102998720/165451625-9742b7be-87f1-470c-8b60-1c6c6f5271a7.png">
