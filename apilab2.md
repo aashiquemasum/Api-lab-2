@@ -182,3 +182,19 @@ name
 job
 id
 createdAt
+<img width="960" alt="6" src="https://user-images.githubusercontent.com/102998720/165444943-0e49efcb-e28b-40f3-863a-4716e8206ff5.png">
+
+7. Sign in to the system using URI: https://reqres.in/api/login and {"email": "peter@klaven"}
+What is the response code?
+Ans. The response code is 400 Bad Request.
+<img width="960" alt="7" src="https://user-images.githubusercontent.com/102998720/165445395-4457bf58-7e74-46e8-8258-1c6255042e06.png">
+
+8. Sign in to the system using URI: https://reqres.in/api/login and
+{
+"email": "eve.holt@reqres.in",
+"password": "cityslicka"
+}
+What is the value of response Header Etag? What is the response?
+Ans. The value of response header Etag is W/"1d-lGCrvD6B7Qzk11+2C98+nGhhuec"
+
+<img width="960" alt="8b" src="https://user-images.githubusercontent.com/102998720/165445848-9046f55d-5959-4d13-95bc-3240b54a3e7b.png">
